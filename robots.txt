@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /public
+Sitemap: sitemap.xml

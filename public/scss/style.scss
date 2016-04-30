@@ -157,3 +157,22 @@ button{
 	color:#4A494D;
 	}
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 435px)
+  {
+  
+  .miam{
+    margin-top: 12vh;
+
+  }
+  .miam h2{
+    font-size:5rem;
+  }
+  .miam p{
+    font-size:2rem;
+  }
+
+}
+

@@ -29,10 +29,24 @@ html, body {
   align-items:left; 
   flex-direction:column;
   margin-top: 18vh;
-  h2{
-    font-weight:700;
-    font-size:9rem;
-  }
+
+.change-text {
+  color: #fff;
+  font-size: 9rem;
+}
+
+
+@keyframes blinking {
+  0%    { opacity: 0; }
+  50%   { opacity: 0; }
+  51%   { opacity: 1; }
+  100%  { opacity: 1; }
+}
+.change-text:after {
+  content: '_';
+  animation: blinking 1.2s infinite;
+  
+}
   p{
     font-size: 4rem;
     margin-top:-15px;
@@ -151,7 +165,7 @@ button{
 	text-transform:uppercase;
 	}
 
-	span{
+	h4{
 	font-size:16px;
 	font-weight:700;
 	color:#4A494D;
@@ -162,7 +176,9 @@ button{
   and (min-device-width: 320px) 
   and (max-device-width: 435px)
   {
-  
+  .miam .change-text {
+  font-size: 7rem;
+  }
   .miam{
     margin-top: 12vh;
 

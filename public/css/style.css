@@ -26,9 +26,21 @@ html, body {
   align-items: left;
   flex-direction: column;
   margin-top: 18vh; }
-.miam h2 {
-  font-weight: 700;
+.miam .change-text {
+  color: #fff;
   font-size: 9rem; }
+@keyframes blinking {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  51% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+.miam .change-text:after {
+  content: '_';
+  animation: blinking 1.2s infinite; }
 .miam p {
   font-size: 4rem;
   margin-top: -15px; }
@@ -134,12 +146,15 @@ button {
   color: #AEADB1;
   font-weight: 700;
   text-transform: uppercase; }
-#infos span {
+#infos h4 {
   font-size: 16px;
   font-weight: 700;
   color: #4A494D; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 435px) {
+  .miam .change-text {
+    font-size: 7rem; }
+
   .miam {
     margin-top: 12vh; }
 

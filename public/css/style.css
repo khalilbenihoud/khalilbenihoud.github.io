@@ -1,2 +1,168 @@
-@import url(https://fonts.googleapis.com/css?family=Karla:400,700);*{-webkit-font-smoothing:antialiased}html,body{height:91%;width:100%;font-family:'Karla', sans-serif}#yummy{background-image:url("../img/me.png"),linear-gradient(to right, #003580 0%, #009FE3 100%);width:100%;height:100%;background-repeat:no-repeat;background-position:right}.miam{font-family:'Karla', sans-serif;color:white;display:flex;justify-content:left;align-items:left;flex-direction:column;margin-top:10vh}.miam .change-text{color:#fff;font-size:9rem}@keyframes blinking{0%{opacity:0}50%{opacity:0}51%{opacity:1}100%{opacity:1}}.miam .change-text:after{content:'_';animation:blinking 1.2s infinite}.miam p{font-size:4rem;margin-top:-15px}.logo-glitch{padding-top:40px}.center__text{font-family:'Karla', sans-serif;font-size:30px}h1{margin-bottom:40px}.glitch{position:relative;color:white;mix-blend-mode:lighten}.glitch:before,.glitch:after{content:attr(data-text);position:absolute;top:0;width:100%;background:black;clip:rect(0, 0, 0, 0)}.glitch:before{left:-1px;text-shadow:1px 0 rgba(255,0,0,0.7)}.glitch:after{left:1px;text-shadow:-1px 0 rgba(0,0,255,0.7)}.glitch:before{text-shadow:4px 0 rgba(255,0,0,0.7);animation:glitch-loop-1 0.8s infinite ease-in-out alternate-reverse}.glitch:after{text-shadow:-5px 0 rgba(0,0,255,0.7);animation:glitch-loop-2 0.8s infinite ease-in-out alternate-reverse}@keyframes glitch-loop-1{0%{clip:rect(36px, 9999px, 9px, 0)}25%{clip:rect(25px, 9999px, 99px, 0)}50%{clip:rect(50px, 9999px, 102px, 0)}75%{clip:rect(30px, 9999px, 92px, 0)}100%{clip:rect(91px, 9999px, 98px, 0)}}@keyframes glitch-loop-2{0%{top:-1px;left:1px;clip:rect(65px, 9999px, 119px, 0)}25%{top:-6px;left:4px;clip:rect(79px, 9999px, 19px, 0)}50%{top:-3px;left:2px;clip:rect(68px, 9999px, 11px, 0)}75%{top:0px;left:-4px;clip:rect(95px, 9999px, 53px, 0)}100%{top:-1px;left:-1px;clip:rect(31px, 9999px, 149px, 0)}}.about{font-family:'Karla', sans-serif;color:white;flex-direction:column;display:flex;justify-content:left;align-items:left}.about h2{font-size:100px;font-weight:700;margin-top:150px}.about p{font-size:40px;margin-top:-30px}button{font-family:'Karla', sans-serif;font-size:14px;text-transform:lowercase;border:none;background-color:#059FFF}#infos{padding:3%;font-family:'Karla', sans-serif;font-weight:700;background-color:white}#infos h3{font-size:14px;color:#AEADB1;font-weight:700;text-transform:uppercase}#infos h4{font-size:16px;font-weight:700;color:#4A494D}@media only screen and (min-device-width: 320px) and (max-device-width: 435px){.miam .change-text{font-size:7rem}.miam{margin-top:12vh}.miam h2{font-size:5rem}.miam p{font-size:2rem}}
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+* {
+  -webkit-font-smoothing: antialiased; }
+
+html, body {
+  height: 91%;
+  width: 100%;
+  font-family: 'Karla', sans-serif; }
+
+#yummy {
+  /* 	background: -webkit-linear-gradient(left, #003580 0%, #009FE3 100%);
+  	background: -o-linear-gradient(left, #003580 0%, #009FE3 100%);
+  	background: linear-gradient(to right, #003580 0%, #009FE3 100%);
+  	*/
+  background-image: url("../img/me.png"), linear-gradient(to right, #003580 0%, #009FE3 100%);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto 100%; }
+
+.miam {
+  font-family: 'Karla', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  margin-top: 10vh; }
+.miam .change-text {
+  color: #fff;
+  font-size: 9rem; }
+@keyframes blinking {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  51% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+.miam .change-text:after {
+  content: '_';
+  animation: blinking 1.2s infinite; }
+.miam p {
+  font-size: 4rem;
+  margin-top: -15px; }
+
+.logo-glitch {
+  padding-top: 40px; }
+
+.center__text {
+  font-family: 'Karla', sans-serif;
+  font-size: 30px; }
+
+h1 {
+  margin-bottom: 40px; }
+
+.glitch {
+  position: relative;
+  color: white;
+  mix-blend-mode: lighten; }
+.glitch:before, .glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: black;
+  clip: rect(0, 0, 0, 0); }
+.glitch:before {
+  left: -1px;
+  text-shadow: 1px 0 rgba(255, 0, 0, 0.7); }
+.glitch:after {
+  left: 1px;
+  text-shadow: -1px 0 rgba(0, 0, 255, 0.7); }
+.glitch:before {
+  text-shadow: 4px 0 rgba(255, 0, 0, 0.7);
+  animation: glitch-loop-1 0.8s infinite ease-in-out alternate-reverse; }
+.glitch:after {
+  text-shadow: -5px 0 rgba(0, 0, 255, 0.7);
+  animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse; }
+
+@keyframes glitch-loop-1 {
+  0% {
+    clip: rect(36px, 9999px, 9px, 0); }
+  25% {
+    clip: rect(25px, 9999px, 99px, 0); }
+  50% {
+    clip: rect(50px, 9999px, 102px, 0); }
+  75% {
+    clip: rect(30px, 9999px, 92px, 0); }
+  100% {
+    clip: rect(91px, 9999px, 98px, 0); } }
+@keyframes glitch-loop-2 {
+  0% {
+    top: -1px;
+    left: 1px;
+    clip: rect(65px, 9999px, 119px, 0); }
+  25% {
+    top: -6px;
+    left: 4px;
+    clip: rect(79px, 9999px, 19px, 0); }
+  50% {
+    top: -3px;
+    left: 2px;
+    clip: rect(68px, 9999px, 11px, 0); }
+  75% {
+    top: 0px;
+    left: -4px;
+    clip: rect(95px, 9999px, 53px, 0); }
+  100% {
+    top: -1px;
+    left: -1px;
+    clip: rect(31px, 9999px, 149px, 0); } }
+.about {
+  font-family: 'Karla', sans-serif;
+  color: white;
+  /*   vertical-align:middle;
+    display: inline-block;
+    line-height: normal;  */
+  flex-direction: column;
+  display: flex;
+  justify-content: left;
+  align-items: left; }
+.about h2 {
+  font-size: 100px;
+  font-weight: 700;
+  margin-top: 150px; }
+.about p {
+  font-size: 40px;
+  margin-top: -30px; }
+
+button {
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  text-transform: lowercase;
+  border: none;
+  background-color: #059FFF; }
+
+#infos {
+  padding: 3%;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  background-color: white; }
+#infos h3 {
+  font-size: 14px;
+  color: #AEADB1;
+  font-weight: 700;
+  text-transform: uppercase; }
+#infos h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4A494D; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 435px) {
+  .miam .change-text {
+    font-size: 7rem; }
+
+  .miam {
+    margin-top: 12vh; }
+
+  .miam h2 {
+    font-size: 5rem; }
+
+  .miam p {
+    font-size: 2rem; } }
+
 /*# sourceMappingURL=style.css.map */
